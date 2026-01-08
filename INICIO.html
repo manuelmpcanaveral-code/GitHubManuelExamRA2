@@ -1,0 +1,90 @@
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Página de inicio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<header class="site-header">
+<div class="container">
+<a class="logo" href="#">MiMarca</a>
+<nav class="nav" id="nav">
+<a href="#">Inicio</a>
+<a href="#features">Servicios</a>
+<a href="#about">Sobre</a>
+<a href="#contact">Contacto</a>
+</nav>
+<button id="menuBtn" class="menu-btn" aria-label="Abrir menú">☰</button>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container hero-inner">
+<div>
+<h1>Bienvenido a <span class="accent">MiMarca</span></h1>
+<p class="lead">Diseñamos productos digitales simples, rápidos y accesibles. Convierte visitantes en clientes.</p>
+<p class="actions">
+<a class="btn primary" href="#contact">Comenzar</a>
+<a class="btn outline" href="#features">Ver servicios</a>
+</p>
+</div>
+<div class="hero-image" aria-hidden="true">
+<!-- ilustración simple con CSS -->
+<div class="device">
+<div class="screen"></div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section id="features" class="features container">
+<article class="card">
+<h3>Rápido</h3>
+<p>Interfaz optimizada para velocidad y conversiones.</p>
+</article>
+<article class="card">
+<h3>Responsive</h3>
+<p>Se ve y funciona genial en móviles y escritorio.</p>
+</article>
+<article class="card">
+<h3>Accesible</h3>
+<p>Diseño pensado para todas las personas.</p>
+</article>
+</section>
+
+
+<section id="about" class="about">
+<div class="container">
+<h2>Quiénes somos</h2>
+<p>Somos un equipo pequeño apasionado por crear experiencias digitales memorables. Nos encanta codear y cuidar los detalles.</p>
+</div>
+</section>
+
+
+<section id="contact" class="contact container">
+<h2>Contacto</h2>
+<form id="contactForm" class="contact-form">
+<input type="text" name="name" placeholder="Tu nombre" required>
+<input type="email" name="email" placeholder="Tu email" required>
+<textarea name="message" placeholder="Tu mensaje" rows="4" required></textarea>
+<button type="submit" class="btn primary">Enviar</button>
+</form>
+<p id="formMsg" class="form-msg" aria-live="polite"></p>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">© <span id="year"></span> MiMarca — Todos los derechos reservados</div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
